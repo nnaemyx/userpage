@@ -1,0 +1,15 @@
+.user_section {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.user_header {
+    width: 830px;
+}

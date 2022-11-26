@@ -1,0 +1,10 @@
+.link_section {
+    text-align: center;
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}

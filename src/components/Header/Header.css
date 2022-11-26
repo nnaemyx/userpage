@@ -1,0 +1,118 @@
+.header_section {
+  background-color: white;
+  height: 527px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header {
+  background-color: #26619c;
+  height: 220px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile_img {
+  display: flex;
+  margin-top: 8rem;
+  margin-left: -2rem;
+}
+
+.profile_img p {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  border: 1px solid;
+  border-radius: 9999px;
+  font-size: 12px;
+  color: white;
+  background-color: #65ab66;
+}
+.profile_text {
+  margin-top: 5.5rem;
+}
+
+.profile_name {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.profile_icon {
+  align-items: center;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.profile_icon span {
+  font-size: 16px;
+}
+
+.profile_name h1 {
+  font-size: 22px;
+}
+
+.profile_left {
+  line-height: 0.4rem;
+}
+.profile_left p {
+  color: #636161;
+}
+
+.profile_left button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1.5px solid;
+  border-radius: 9999px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.profile_username {
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+}
+
+.profile_location {
+  display: flex;
+  align-items: center;
+  margin-top: -1rem;
+  gap: .3rem;
+}
+
+.profile_follow {
+  display: flex;
+  gap: 1rem;
+  font-size: 15px;
+  margin-top: -0.2rem;
+  margin-bottom: 0.1rem;
+}
+.profile_follow span {
+  color: black;
+  font-weight: 600;
+}
+
+.profile_edit {
+  margin-top: 16rem;
+}
+
+.profile_edit button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1.5px solid;
+  border-radius: 9999px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.profile_section {
+  display: flex;
+  justify-content: space-between;
+}

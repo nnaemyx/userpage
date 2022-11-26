@@ -1,0 +1,46 @@
+.about_section {
+  background-color: white;
+  border-radius: 0.375rem;
+  margin-top: 2rem;
+}
+
+.about {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+height: 160px;
+}
+
+.about_name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about_desktop {
+    display: block;
+}
+
+.about_p1 {
+    width: 740px;
+}
+.about_p {
+    width: 680px;
+}
+.about_mobile {
+    display: none;
+}
+
+.about_edit {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+
+@media screen and (max-width: 360px) {
+    .about_mobile {
+        display: flex;
+    }
+    .about_desktop {
+        display: none;
+    }
+}
