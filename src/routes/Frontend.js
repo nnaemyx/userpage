@@ -4,6 +4,7 @@ import Ads from "../components/Adssection/Ads";
 import Links from "../components/Linksection/Links";
 import "./user.css";
 import About from "../components/Aboutsection/About";
+import File from "../components/Filessection/File";
 
 const Frontend = () => {
   return (
@@ -12,7 +13,8 @@ const Frontend = () => {
       <div className="user_section container">
         <div className="user_header">
                   <Header />
-                  <About/>
+                  <About />
+                  <File/>
         </div>
         <Ads />
       </div>

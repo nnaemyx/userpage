@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import './About.css'
-import Editicon from '../../images/pngfind 1.svg'
-
+import "./About.css";
+import Editicon from "../../images/pngfind 1.svg";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);
@@ -16,13 +15,13 @@ const About = () => {
   const linkName = readMore ? "..See less" : "..See more";
 
   return (
-    <div className=" about_section">
-          <div className=" about">
-              <div className="about_edit">
-                <h1 className=" about_name">About</h1>
-                  <img src={Editicon} alt="" />
-              </div>
-        <div className="hidden md:block about_desktop">
+    <div className="container about_section">
+      <div className=" about">
+        <div className="about_edit">
+          <h1 className=" about_name">About</h1>
+          <img src={Editicon} alt="" />
+        </div>
+        <div className=" about_desktop">
           <p className="about_p1">
             I am an experienced Software Engineer with passion for building
             innovative softwares to drive business growth. I have track history
@@ -36,7 +35,7 @@ const About = () => {
         </div>
 
         {/* for mobile */}
-        <div className="md:hidden block about_mobile">
+        <div className=" about_mobile">
           <p className="lg:w-[740px] text-[12px]">
             I am an experienced Software Engineer with passion for building
             innovative softwares to drive business growth. I have track history
@@ -49,7 +48,6 @@ const About = () => {
             >
               <h2>{linkName}</h2>
             </button>
-            
           </p>
         </div>
       </div>
