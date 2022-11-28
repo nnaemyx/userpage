@@ -1,7 +1,7 @@
 .user_section {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
