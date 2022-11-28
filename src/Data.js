@@ -1,5 +1,5 @@
-import Profilepic from './images/Profile Pic Display (1).svg'
-import Editicon from './images/arrow-down-to-line.svg' 
+import Profilepic from "./images/Profile Pic Display (1).svg";
+import Editicon from "./images/arrow-down-to-line.svg";
 
 export const profile = [
   {

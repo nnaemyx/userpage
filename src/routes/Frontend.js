@@ -6,6 +6,7 @@ import "./user.css";
 import About from "../components/Aboutsection/About";
 import File from "../components/Filessection/File";
 import Skill from "../components/Skillssection/Skill";
+import Contact from "../components/Contactsection/Contact";
 
 const Frontend = () => {
   return (
@@ -16,7 +17,8 @@ const Frontend = () => {
                   <Header />
                   <About />
                   <File />
-                  <Skill/>
+                  <Skill />
+                  <Contact/>
         </div>
         <Ads />
       </div>

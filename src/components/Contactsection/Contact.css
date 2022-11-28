@@ -1,0 +1,61 @@
+.contact_section {
+  background-color: white;
+  border-radius: 0.375rem;
+  margin-top: 2rem;
+}
+
+.contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* padding-left: 2rem; */
+  height: 158px;
+}
+
+.contact_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_top h1 {
+  font-size: 20px;
+}
+
+.contact_edit {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.contact_body {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  line-height: 0.1rem;
+}
+
+.contact_text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact_first p {
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+
+.contact_second p {
+    font-weight: 600;
+    margin-bottom: 21px;
+}
+
+.contact_first h4 {
+  margin-left: 2rem;
+  margin-top: -0.001rem;
+  font-weight: 400;
+}
+.contact_second h4 {
+  margin-left: 2rem;
+  margin-top: -0.001rem;
+  font-weight: 400;
+}
