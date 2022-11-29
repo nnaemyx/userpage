@@ -9,7 +9,7 @@ const Edit = ({ open, onClose }) => {
   if (!open) return null;
   return (
     <div className="bg-black/54 top-[0.01rem] left-[0.01rem] overflow-auto fixed w-[100%] h-[100%] ">
-      <div className="rounded-md fixed top-[10%] max-w-[800px] overflow-y-auto max-h-[100%]  left-[18%] h-[983px] w-[798px] bg-white">
+        <div className="rounded-md fixed top-[10%] max-w-[800px] overflow-y-auto max-h-[100%]  lg:left-[18%] left-[5%] h-[983px] lg:w-[798px] w-[310px]  bg-white">
         <div className="flex container mt-4 justify-between">
           <div className="flex gap-2 items-center">
             <GrFormClose onClick={onClose} size={25} />
@@ -54,7 +54,7 @@ const Edit = ({ open, onClose }) => {
               type="text"
               name="name"
               placeholder=""
-              className="w-[100%] border focus:outline-none rounded-md py-2 px-2 mt-2 mb-4 border-[#6B6868]/50"
+              className="w-[100%] font-[500] border focus:outline-none rounded-md py-2 px-2 mt-2 mb-4 border-[#6B6868]/50"
               id=""
             />
           </div>
@@ -64,7 +64,7 @@ const Edit = ({ open, onClose }) => {
               type="text"
               name="name"
               placeholder=""
-              className="w-[100%] border focus:outline-none rounded-md py-2 px-2 mt-2 mb-4 border-[#6B6868]/50"
+              className="w-[100%] font-[500] border focus:outline-none rounded-md py-2 px-2 mt-2 mb-4 border-[#6B6868]/50"
               id=""
             />
           </div>
@@ -74,7 +74,7 @@ const Edit = ({ open, onClose }) => {
               type="text"
               name="name"
               placeholder=""
-              className="w-[100%] border focus:outline-none rounded-md py-2 px-2 mt-2 mb-4 border-[#6B6868]/50"
+              className="w-[100%] font-[500] border focus:outline-none rounded-md py-2 px-2 mt-2 mb-4 border-[#6B6868]/50"
               id=""
             />
           </div>

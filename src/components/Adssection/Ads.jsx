@@ -15,14 +15,16 @@ const Ads = () => {
           return (
             <div className="flex gap-4 items-center">
               <div>
-                <img src={items.image.type} alt=""  />
+                <img src={items.image.type} alt="" className="w-[100px]" />
               </div>
 
               <div>
                 <div className="mt-6">
                   <h1 className="text-[14px] font-semibold">{items.name}</h1>
                   <p className="text-[12px]">{items.paragraph}</p>
-                  <button className="px-4 py-1 mt-1 border-[1.5px] text-[14px] rounded-full bg-primary text-white">{items.follow}</button>
+                  <button className="px-4 py-1 mt-1 border-[1.5px] text-[14px] rounded-full bg-primary text-white">
+                    {items.follow}
+                  </button>
                 </div>
               </div>
             </div>
