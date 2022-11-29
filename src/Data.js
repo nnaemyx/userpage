@@ -9,7 +9,7 @@ export const profile = [
     name: "Alisha tiffany",
     username: "@alishatiffany",
     software: "Software Developer",
-    location: "London UK, GMT",
+    location: "London UK, GMT - 11:30AM",
   },
 ];
 
@@ -36,24 +36,24 @@ export const people = [
     image: <Adsimage />,
     name: "James Tom",
     paragraph: "Software Developer",
-    follow: "follow",
+    follow: "Follow",
   },
   {
     image: <Adsimage />,
     name: "James Tom",
     paragraph: "Software Developer",
-    follow: "follow",
+    follow: "Follow",
   },
   {
     image: <Adsimage />,
     name: "James Tom",
     paragraph: "Software Developer",
-    follow: "follow",
+    follow: "Follow",
   },
   {
     image: <Adsimage />,
     name: "James Tom",
     paragraph: "Software Developer",
-    follow: "follow",
+    follow: "Follow",
   },
 ];

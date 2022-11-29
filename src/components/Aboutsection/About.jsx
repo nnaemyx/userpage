@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./About.css";
-import Editicon from "../../images/pngfind 1.svg";
+import Editicon from '../../images/pngfind 1.svg'
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);
@@ -15,27 +14,27 @@ const About = () => {
   const linkName = readMore ? "..See less" : "..See more";
 
   return (
-    <div className="container about_section">
-      <div className=" about">
-        <div className="about_edit">
-          <h1 className=" about_name">About</h1>
+    <div className="bg-white mt-6 rounded-md">
+      <div className="lg:w-[830px] container py-8 lg:pl-[2rem] pl-[1rem] lg:h-[190px]">
+         <div className="flex justify-between">
+          <h1 className=" font-semibold text-[17px]">About</h1>
           <img src={Editicon} alt="" />
         </div>
-        <div className=" about_desktop">
-          <p className="about_p1">
+        <div className="hidden md:block">
+          <p className="xl:w-[740px] lg:w-[620px]">
             I am an experienced Software Engineer with passion for building
             innovative softwares to drive business growth. I have track history
             of working with several software technology companies.
           </p>
 
-          <p className="about_p ">
+          <p className="lg:mt-4 xl:w-[680px] lg:w-[500px]">
             I have great leadership skills and have demostrated ability to
             inspire, motivate and manage a team.
           </p>
         </div>
 
         {/* for mobile */}
-        <div className=" about_mobile">
+        <div className="md:hidden block">
           <p className="lg:w-[740px] text-[12px]">
             I am an experienced Software Engineer with passion for building
             innovative softwares to drive business growth. I have track history
@@ -48,8 +47,11 @@ const About = () => {
             >
               <h2>{linkName}</h2>
             </button>
+            
           </p>
         </div>
+
+            
       </div>
     </div>
   );
