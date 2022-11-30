@@ -12,7 +12,7 @@ const Backend = () => {
   return (
     <div>
       <Links />
-      <div className=" lg:flex-row gap-[2rem] mt-[3rem] flex-col flex container">
+      <div className=" lg:flex-row lg:gap-[2rem] mt-[3rem] flex-col flex lg:container">
         <div className="">
           <Header />
           <About />
@@ -20,7 +20,10 @@ const Backend = () => {
           <Skill />
           <Contact />
         </div>
-        <Ads />
+        <div>
+          <Ads />
+
+        </div>
       </div>{" "}
       <Footer/>
     </div>

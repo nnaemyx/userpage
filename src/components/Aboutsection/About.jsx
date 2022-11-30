@@ -15,10 +15,10 @@ const About = () => {
 
   return (
     <div className="bg-white mt-6 rounded-md">
-      <div className="lg:w-[830px] container py-8 lg:pl-[2rem] pl-[1rem] lg:h-[190px]">
+      <div className="lg:w-[830px] lg:container  py-8 pl-[1rem] lg:h-[190px]">
          <div className="flex justify-between">
           <h1 className=" font-semibold text-[17px]">About</h1>
-          <img src={Editicon} alt="" />
+          <img src={Editicon} alt="" className="pr-4 lg:pr-0" />
         </div>
         <div className="hidden md:block">
           <p className="xl:w-[740px] lg:w-[620px]">
