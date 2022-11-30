@@ -13,7 +13,7 @@ const Contact = () => {
           <h1 className="lg:text-[20px] text-[13px] font-semibold">Contact</h1>
           <div className="flex items-center gap-[1rem]">
             <BsPlusLg  size={13} />
-            <img src={EditIcon} width={15} alt="" />
+            <img src={EditIcon}  alt="" className="w-[20px]" />
           </div>
         </div>
 
