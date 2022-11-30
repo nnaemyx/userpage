@@ -4,23 +4,23 @@ import { files } from "../../Data";
 
 const File = () => {
   return (
-    <div className="lg:container bg-white rounded-md mt-[2rem] file_section">
+    <div className="lg:container px-4 bg-white rounded-md mt-[2rem] file_section">
       <div className="py-[2rem] h-[140px]">
         <div className="flex justify-between items-center">
-          <h1 className="text-[18px] font-semibold">Files</h1>
+          <h1 className="lg:text-[20px] text-[13px] font-semibold">Files</h1>
           <div>
-            <button className="px-[15px] py-[5px] border rounded-full text-[14px] bg-primary text-white">Upload</button>
+            <button className="px-[15px] py-[5px] border rounded-full text-[13px] lg:text-[14px] bg-primary text-white">Upload</button>
           </div>
         </div>
-        <div className="file_box flex lg:flex-row overflow-x-auto max-w-[100%] gap-[1rem]">
+        <div className="file_box flex lg:flex-row overflow-x-auto  gap-[1rem]">
           {files.map((items, index) => {
             return (
-              <div className="file_box1 flex items-center  justify-between border border-solid border-[#6B6868]/50 text-[13px] mt-[.5rem] w-[40%] px-[1rem] rounded-[10px] leading-[1.4rem]" key={index}>
-                <div className="file_type">
+              <div className="flex items-center justify-between gap-4 border border-solid border-[#6B6868]/50 text-[13px] mt-[.5rem] lg:w-[40%] w-[180%] lg:px-[1rem] px-[3.5rem] py-1 rounded-[10px] leading-[1.4rem]" key={index}>
+                <div className="-ml-9 lg:ml-0">
                   <p className="font-semibold">{items.name}</p>
-                  <p>{items.docs}</p>
+                  <p className="text-[12px]">{items.docs}</p>
                 </div>
-                <img src={items.icon.type} alt="aa" />
+                <img src={items.icon.type} alt="aa" className="ml-8 lg:ml-0" />
               </div>
             );
           })}

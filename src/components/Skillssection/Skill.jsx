@@ -8,30 +8,30 @@ import EditIcon from "../../images/pngfind 1.svg";
 const Skill = () => {
   return (
     <div className="lg:container bg-white rounded-md mt-[2rem]">
-      <div className="py-[2rem] h-[170px]">
+      <div className="lg:py-[2rem] py-[1rem] px-4 lg:px-0 h-[132px] lg:h-[170px]">
         <div className="flex items-center justify-between">
-          <h1 className="text-[20px] ml-[2rem] font-semibold">Skills and portfolio</h1>
+          <h1 className="lg:text-[20px] text-[13px] lg:ml-[2rem] font-semibold">Skills and portfolio</h1>
           <div className="flex items-center gap-[1rem]">
-            <BsPlusLg />
-            <img src={EditIcon} alt="" />
+            <BsPlusLg size={13} />
+            <img src={EditIcon} width={15} alt="" />
           </div>
         </div>
-        <div >
-          <div className="flex gap-[1rem] font-normal items-center leading-8">
+        <div className="text-[13px] lg:text-[14px] font-normal" >
+          <div className="flex lg:gap-[1rem] gap-[5px] font-normal items-center leading-8">
             <span>
               <BiCodeAlt size={20} />
             </span>
             <p>Node.js, React.js, Javascript, Tailwind, Python.</p>
           </div>
 
-          <div className="flex gap-[1rem] font-normal items-center leading-7">
+          <div className="flex lg:gap-[1rem] gap-[5px] font-normal items-center leading-7">
             <span>
               <AiOutlineGithub size={20} />
             </span>
             <p>Github</p>
           </div>
 
-          <div className="flex gap-[1rem] font-normal items-center leading-7">
+          <div className="flex lg:gap-[1rem] gap-[5px] font-normal items-center leading-7">
             <span>
               <TfiWorld size={20} />
             </span>

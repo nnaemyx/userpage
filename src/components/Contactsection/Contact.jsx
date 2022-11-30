@@ -7,17 +7,17 @@ import EditIcon from "../../images/pngfind 1.svg";
 
 const Contact = () => {
   return (
-    <div className="lg:container bg-white rounded-md mt-6 ">
-      <div className="px-2 pt-2 h-[158px]">
+    <div className="lg:container bg-white rounded-md mt-6 mb-6 ">
+      <div className="lg:px-2 px-4 pt-2 h-[158px]">
         <div className=" flex items-center justify-between ">
-          <h1 className="text-[20px] font-semibold">Contact</h1>
+          <h1 className="lg:text-[20px] text-[13px] font-semibold">Contact</h1>
           <div className="flex items-center gap-[1rem]">
-            <BsPlusLg />
-            <img src={EditIcon} alt="" />
+            <BsPlusLg  size={13} />
+            <img src={EditIcon} width={15} alt="" />
           </div>
         </div>
 
-        <div className="flex items-center mt-2 lg:gap-[5rem] leading-6">
+        <div className="flex items-center mt-2 lg:gap-[5rem] gap-4 leading-6">
           <div className="mb-[21px]">
             <div className="flex items-center gap-[1rem]">
               <span>
