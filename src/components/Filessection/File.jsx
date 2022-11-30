@@ -1,15 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import { files } from "../../Data";
+import Upload from "../Upload";
 // import "./File.css";
 
 const File = () => {
+    const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="lg:container px-4 bg-white rounded-md mt-[2rem] file_section">
       <div className="py-[2rem] h-[140px]">
         <div className="flex justify-between items-center">
           <h1 className="lg:text-[20px] text-[13px] font-semibold">Files</h1>
           <div>
-            <button className="px-[15px] py-[5px] border rounded-full text-[13px] lg:text-[14px] bg-primary text-white">Upload</button>
+            <button onClick={() => setOpenModal(true)} className="px-[15px] py-[5px] border rounded-full text-[13px] lg:text-[14px] bg-primary text-white" >Upload</button>
+            <Upload open={openModal} onClose={() => setOpenModal(false)}/>
           </div>
         </div>
         <div className="file_box flex lg:flex-row overflow-x-auto  gap-[1rem]">
