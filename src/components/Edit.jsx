@@ -1,5 +1,6 @@
 import React from "react";
 import { GrFormClose } from "react-icons/gr";
+import { IoIosArrowDown} from "react-icons/io";
 import closeicon from ".././images/closeicon.svg";
 import cameraicon from ".././images/cameraicon.svg";
 import profileimage from ".././images/Profile Pic Display (1).svg";
@@ -48,6 +49,7 @@ const Edit = ({ open, onClose }) => {
             <div className="flex items-center lg:pr-[3rem] lg:-mt-0 -mt-[.5rem] pr-[1rem] gap-[0.2rem]">
               <img src={MoonIcon} alt="" />
               <span className="lg:text-[16px] text-[10px]">away</span>
+              <IoIosArrowDown/>
             </div>
           </div>
         </div>

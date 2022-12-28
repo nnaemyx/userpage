@@ -7,7 +7,7 @@ const File = () => {
     const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className="lg:container px-4 bg-white rounded-md mt-[2rem] file_section">
+    <div className="lg:container px-4 bg-white rounded-md mt-[2rem]">
       <div className="py-[2rem] h-[140px]">
         <div className="flex justify-between items-center">
           <h1 className="lg:text-[20px] text-[13px] font-semibold">Files</h1>
