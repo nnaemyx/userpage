@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { GrFormClose } from "react-icons/gr";
-import { IoIosArrowDown} from "react-icons/io";
+import { GoPrimitiveDot } from "react-icons/go";
+import { HiMoon } from "react-icons/hi";
+import { MdDoNotDisturbOn } from "react-icons/md";
+import { VscSettingsGear } from "react-icons/vsc";
 import closeicon from ".././images/closeicon.svg";
 import cameraicon from ".././images/cameraicon.svg";
 import profileimage from ".././images/Profile Pic Display (1).svg";
 import MoonIcon from ".././images/moon 2.svg";
-import './Edit.css'
-
+import "./Edit.css";
 
 const Edit = ({ open, onClose }) => {
+  const [isOpen, setIsOpen] = useState(false);
   if (!open) return null;
   return (
     <div className="bg-black/54 top-[0.01rem] left-[0.01rem] overflow-auto fixed w-[100%] h-[100%] ">
@@ -46,10 +49,56 @@ const Edit = ({ open, onClose }) => {
               </div>
             </div>
 
-            <div className="flex items-center lg:pr-[3rem] lg:-mt-0 -mt-[.5rem] pr-[1rem] gap-[0.2rem]">
-              <img src={MoonIcon} alt="" />
-              <span className="lg:text-[16px] text-[10px]">away</span>
-              <IoIosArrowDown/>
+            <div className="flex items-center lg:pr-[3rem] lg:-mt-0  -mt-[.1rem] pr-[1rem] lg:gap-[0.2rem]">
+              <div className="relative">
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  className=" text-gray-800 font-medium lg:text-[14px] text-[12px]  lg:py-2 px-1 py-1 lg:px-4 rounded-lg flex items-center"
+                >
+                  Set status
+                  <svg
+                    className="-mr-1 ml-2 h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                {isOpen && (
+                  <div className="absolute right-0 lg:text-[14px] text-[12px] z-10 w-[200%] bg-[#002633] rounded-lg py-2">
+                    <a
+                      href="#f"
+                      className="flex gap-2 items-center lg:text-[14px] text-[12px]  px-4 py-2 text-white hover:bg-gray-200 hover:text-[black]"
+                    >
+                      <GoPrimitiveDot className="text-[green]" />
+                      Online
+                    </a>
+                    <a
+                      href="#f"
+                      className="flex gap-2 items-center lg:text-[14px] text-[12px]  px-4 py-2 text-white hover:bg-gray-200 hover:text-[black]"
+                    >
+                      <HiMoon className="text-[#ffcc00]" />
+                      Idle
+                    </a>
+                    <a
+                      href="#f"
+                      className="flex gap-2 items-center px-4 py-2 text-white hover:bg-gray-200 hover:text-[black]"
+                    >
+                      <MdDoNotDisturbOn className="text-[red]" />
+                      <div className="">
+                        Do not disturb
+                        <p className="lg:text-[10px] text-[8px]">
+                          You will not receive any desktop notifications
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -193,28 +242,12 @@ const Edit = ({ open, onClose }) => {
           </div>
         </form>
 
-        <div className="mb-[10rem] lg:container px-4 leading-9">
-          <div className="flex justify-between">
-            <p className="lg:text-[16px] text-[10px] font-[500]">Restrict messaging to contacts or people you follow</p>
-            <input type="checkbox" className='lg:w-[20px] w-[13px]' />
-          </div>
-
-           <div className="flex justify-between">
-            <p className="lg:text-[16px] hidden lg:block text-[10px] font-[500]">Restrict people from sending contact(friend) requests</p>
-            <p className="lg:hidden block lg:text-[16px] text-[10px] font-[500]">Restrict people from sending friend requests</p>
-            <input type="checkbox" className='lg:w-[20px] w-[13px]' />
-          </div>
-           <div className="flex justify-between">
-            <p className="lg:text-[16px] text-[10px] font-[500]">Restrict people from following you</p>
-            <input type="checkbox" className='lg:w-[20px] w-[13px]' />
-          </div>
-           <div className="flex justify-between">
-            <p className="lg:text-[16px] text-[10px] font-[500]">Restrict people from viewing contact box</p>
-            <input type="checkbox" className='lg:w-[20px] w-[13px]' />
-          </div>
-           <div className="flex justify-between">
-            <p className="lg:text-[16px] text-[10px] font-[500]">Restrict people from scheduling a call</p>
-            <input type="checkbox" className='lg:w-[20px] w-[13px]' />
+        <div className="mb-[10rem] text-center lg:container px-4 leading-9">
+          <div className=" mb-[10rem] lg:container px-4 leading-9 items-center">
+            <a href="#f" className="flex  items-center gap-2">
+              <VscSettingsGear className="text-[black]" />
+              <h1 className="text-[black] font-semibold">Settings</h1>
+            </a>
           </div>
         </div>
       </div>
